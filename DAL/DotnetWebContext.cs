@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using DotnetWeb.Models;
 
 namespace DotnetWeb.DAL
 {
@@ -8,5 +10,8 @@ namespace DotnetWeb.DAL
         {
 
         }
+        
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }
