@@ -22,7 +22,7 @@ namespace DotnetWeb
         {
             services.AddMvc();
 
-            var connection = @"Server=.\RAMAZAN;Database=DotnetWeb;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=RAMAZAN;Database=DotnetWeb;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<DotnetWebContext>(options => options.UseSqlServer(connection));
         }
 
